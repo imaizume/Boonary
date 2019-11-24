@@ -7,7 +7,7 @@ The motivation for this library comes when you think of converting Bool value in
 It's possible to implement extension with Bool or Int but burden for you to write in every project!
 So that's why this library exist.
                        DESC
-  s.homepage         = 'https://www.imaizu.me'
+  s.homepage         = 'https://github.com/imaizume/Boonary'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tomohiro Imaizumi' => 'bonriki.life@gmail.com' }
   s.source           = { :git => 'https://github.com/imaizume/Boonary.git', :tag => s.version.to_s }
