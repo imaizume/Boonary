@@ -14,4 +14,5 @@ So that's why this library exist.
   s.social_media_url = 'https://twitter.com/imaizume'
   s.ios.deployment_target = '8.0'
   s.source_files = 'Boonary/Classes/**/*'
+  s.swift_version = '4.0'
 end
