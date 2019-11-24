@@ -1,42 +1,17 @@
-#
-# Be sure to run `pod lib lint Boonary.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Boonary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Boonary.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Simple extensions of conversion between Bool and Int values.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The motivation for this library comes when you think of converting Bool value into Int one e.g. true to 1 or false to 0 and vice versa.
+It's possible to implement extension with Bool or Int but burden for you to write in every project!
+So that's why this library exist.
                        DESC
-
-  s.homepage         = 'https://github.com/Tomohiro Imaizumi/Boonary'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://www.imaizu.me'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Tomohiro Imaizumi' => 'info@imaizu.me' }
-  s.source           = { :git => 'https://github.com/Tomohiro Imaizumi/Boonary.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'Tomohiro Imaizumi' => 'bonriki.life@gmail.com' }
+  s.source           = { :git => 'https://github.com/imaizume/Boonary.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/imaizume'
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'Boonary/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Boonary' => ['Boonary/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

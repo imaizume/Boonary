@@ -1,0 +1,27 @@
+PODS:
+  - Boonary (0.1.0)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - Boonary (from `../`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Boonary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Boonary: 20fcc40560469e7bddf89c9ec36e377fb8a8cf3f
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 8b227113a45eb634214d6c6631e694a5cc0c3632
+
+COCOAPODS: 1.7.5

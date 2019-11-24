@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17BE734F238AE06200829973 /* BoolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE734B238AE00E00829973 /* BoolExtensionTests.swift */; };
+		17BE7350238AE06500829973 /* IntExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE734D238AE01E00829973 /* IntExtensionTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		893F786EE320D589FCF0812F /* Pods_Boonary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE61BCC9A0CCCA3D0C7B493 /* Pods_Boonary_Example.framework */; };
 		D38321630955C313405D4B91 /* Pods_Boonary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94392DD5DA97110773D9922 /* Pods_Boonary_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -29,8 +30,10 @@
 
 /* Begin PBXFileReference section */
 		01EF11783B729B20E4F2EED2 /* Pods-Boonary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boonary_Tests.release.xcconfig"; path = "Target Support Files/Pods-Boonary_Tests/Pods-Boonary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		28A4F1D8E9932E014D5D6807 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* Boonary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boonary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BE734B238AE00E00829973 /* BoolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensionTests.swift; sourceTree = "<group>"; };
+		17BE734D238AE01E00829973 /* IntExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTests.swift; sourceTree = "<group>"; };
+		28A4F1D8E9932E014D5D6807 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* Boonary Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boonary Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +42,9 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Boonary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Boonary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		75D611DCE6F1F4493E713B29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		75D611DCE6F1F4493E713B29 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AAE61BCC9A0CCCA3D0C7B493 /* Pods_Boonary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boonary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB39D76DB2D7A79D3C8CAF7 /* Boonary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Boonary.podspec; path = ../Boonary.podspec; sourceTree = "<group>"; };
+		ADB39D76DB2D7A79D3C8CAF7 /* Boonary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Boonary.podspec; path = ../Boonary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B85C8F8106C22F3F1D10557B /* Pods-Boonary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boonary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Boonary_Tests/Pods-Boonary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A7108785C92AC2A974C899 /* Pods-Boonary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boonary_Example.debug.xcconfig"; path = "Target Support Files/Pods-Boonary_Example/Pods-Boonary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D43E51282EB87DC1302ABE1A /* Pods-Boonary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boonary_Example.release.xcconfig"; path = "Target Support Files/Pods-Boonary_Example/Pods-Boonary_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +86,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* Boonary_Example.app */,
+				607FACD01AFB9204008FA782 /* Boonary Example.app */,
 				607FACE51AFB9204008FA782 /* Boonary_Tests.xctest */,
 			);
 			name = Products;
@@ -115,8 +117,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				17BE734B238AE00E00829973 /* BoolExtensionTests.swift */,
+				17BE734D238AE01E00829973 /* IntExtensionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -156,7 +159,6 @@
 				B85C8F8106C22F3F1D10557B /* Pods-Boonary_Tests.debug.xcconfig */,
 				01EF11783B729B20E4F2EED2 /* Pods-Boonary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,7 +181,7 @@
 			);
 			name = Boonary_Example;
 			productName = Boonary;
-			productReference = 607FACD01AFB9204008FA782 /* Boonary_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* Boonary Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* Boonary_Tests */ = {
@@ -228,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -361,7 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				17BE7350238AE06500829973 /* IntExtensionTests.swift in Sources */,
+				17BE734F238AE06200829973 /* BoolExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,8 +506,8 @@
 				INFOPLIST_FILE = Boonary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.imaizu.app.Boonary.Example;
+				PRODUCT_NAME = "Boonary Example";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -517,8 +521,8 @@
 				INFOPLIST_FILE = Boonary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.imaizu.app.Boonary.Example;
+				PRODUCT_NAME = "Boonary Example";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
