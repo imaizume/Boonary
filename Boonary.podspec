@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Boonary'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Simple extensions of conversion between Bool and Int values.'
   s.description      = <<-DESC
 The motivation for this library comes when you think of converting Bool value into Int one e.g. true to 1 or false to 0 and vice versa.
