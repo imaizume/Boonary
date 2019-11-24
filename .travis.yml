@@ -2,13 +2,16 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode7.3
-language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+osx_image: xcode11.2
+cache:
+- bundler
+- cocoapods
+language: swift
+podfile: Example/Podfile
+before_install:
+- bundle install
+- bundle exec pod repo update
+- bundle exec pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Boonary.xcworkspace -scheme Boonary-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/Boonary.xcworkspace -configuration Debug -scheme Boonary-Example  -destination 'platform=iOS Simulator,name=iPhone 11' CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | bundle exec xcpretty -c
+- bundle exec pod lib lint
