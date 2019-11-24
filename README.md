@@ -5,16 +5,26 @@
 [![License](https://img.shields.io/cocoapods/l/Boonary.svg?style=flat)](https://cocoapods.org/pods/Boonary)
 [![Platform](https://img.shields.io/cocoapods/p/Boonary.svg?style=flat)](https://cocoapods.org/pods/Boonary)
 
+Simple extensions of conversion between Bool and Int values.
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### Bool to Int
 
-## Requirements
+```swift
+print(false.binary) // 0
+print(true.binary)  // 1
+```
+
+### Int to Bool
+
+```swift
+print(0.boolean!) // false
+print(1.boolean!) // true
+print(2.boolean)  // nil
+```
 
 ## Installation
-
-Boonary is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'Boonary'
@@ -22,7 +32,7 @@ pod 'Boonary'
 
 ## Author
 
-Tomohiro Imaizumi, info@imaizu.me
+Tomohiro Imaizumi, bonriki.life@gmail.com
 
 ## License
 
