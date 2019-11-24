@@ -1,6 +1,6 @@
 # Boonary
 
-[![CI Status](https://img.shields.io/travis/Tomohiro Imaizumi/Boonary.svg?style=flat)](https://travis-ci.org/Tomohiro Imaizumi/Boonary)
+[![CI Status](https://img.shields.io/travis/imaizume/Boonary.svg?style=flat)](https://travis-ci.org/Tomohiro Imaizumi/Boonary)
 [![Version](https://img.shields.io/cocoapods/v/Boonary.svg?style=flat)](https://cocoapods.org/pods/Boonary)
 [![License](https://img.shields.io/cocoapods/l/Boonary.svg?style=flat)](https://cocoapods.org/pods/Boonary)
 [![Platform](https://img.shields.io/cocoapods/p/Boonary.svg?style=flat)](https://cocoapods.org/pods/Boonary)
