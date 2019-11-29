@@ -1,27 +1,31 @@
 PODS:
-  - Boonary (0.1.0)
+  - Boonary (0.1.1)
   - Nimble (7.3.4)
   - Quick (1.3.4)
+  - SwiftCheck (0.12.0)
 
 DEPENDENCIES:
   - Boonary (from `../`)
   - Nimble (~> 7.0)
   - Quick (~> 1.3.0)
+  - SwiftCheck
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
+    - SwiftCheck
 
 EXTERNAL SOURCES:
   Boonary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Boonary: 0e58c00fa701ba9c8f829d816f7e6bce89025a72
+  Boonary: 3eb5b2eee851d381e6ebcacc038240a83293a6d4
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  SwiftCheck: d1dd04d955cc76620b0f84e087536bd059a11c24
 
-PODFILE CHECKSUM: a96e68ea7ea959f86e081b528de47ef17af63c7e
+PODFILE CHECKSUM: 8441800303fd1fe8a06ac1347bce17810a1ed9c3
 
 COCOAPODS: 1.7.5

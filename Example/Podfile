@@ -8,5 +8,6 @@ target 'Boonary_Example' do
 
     pod 'Quick', '~> 1.3.0'
     pod 'Nimble', '~> 7.0'
+    pod 'SwiftCheck'
   end
 end

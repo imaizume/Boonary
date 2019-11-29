@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1757832623917A9200A3FE8B /* PropertyBasedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1757832423917A8900A3FE8B /* PropertyBasedTests.swift */; };
 		17BE734F238AE06200829973 /* BoolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE734B238AE00E00829973 /* BoolExtensionTests.swift */; };
 		17BE7350238AE06500829973 /* IntExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE734D238AE01E00829973 /* IntExtensionTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		01EF11783B729B20E4F2EED2 /* Pods-Boonary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boonary_Tests.release.xcconfig"; path = "Target Support Files/Pods-Boonary_Tests/Pods-Boonary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1757832423917A8900A3FE8B /* PropertyBasedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyBasedTests.swift; sourceTree = "<group>"; };
 		17BE734B238AE00E00829973 /* BoolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensionTests.swift; sourceTree = "<group>"; };
 		17BE734D238AE01E00829973 /* IntExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTests.swift; sourceTree = "<group>"; };
 		28A4F1D8E9932E014D5D6807 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				17BE734B238AE00E00829973 /* BoolExtensionTests.swift */,
 				17BE734D238AE01E00829973 /* IntExtensionTests.swift */,
+				1757832423917A8900A3FE8B /* PropertyBasedTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -337,11 +340,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Boonary_Tests/Pods-Boonary_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCheck/SwiftCheck.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCheck.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17BE7350238AE06500829973 /* IntExtensionTests.swift in Sources */,
+				1757832623917A9200A3FE8B /* PropertyBasedTests.swift in Sources */,
 				17BE734F238AE06200829973 /* BoolExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
