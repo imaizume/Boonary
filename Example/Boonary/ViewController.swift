@@ -10,15 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var fromIntTextField: UITextField!
+    @IBOutlet private weak var toBoolLabel: UILabel!
+
+    private var presenter: Presenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.presenter = .init(toBoolLabel: self.toBoolLabel)
+        self.fromIntTextField.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        self.presenter.updateToBoolLabelValue(textField.text)
+        return true
+    }
+}

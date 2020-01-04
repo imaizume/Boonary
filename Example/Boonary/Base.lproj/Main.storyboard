@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,18 +12,74 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Boonary_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SWA-ZX-Uqi">
+                                <rect key="frame" x="20" y="437" width="374" height="32"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG8-Tr-7aX" userLabel="Int to Bool View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Int to Bool  : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-0Z-IPf" userLabel="Int to Bool Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="T6F-oR-Mdo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GC1-98-ETZ" userLabel="From Int Text Field">
+                                                <rect key="frame" x="110" y="0.0" width="174" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzZ-NI-qlc" userLabel="To Bool Label">
+                                                <rect key="frame" x="294" y="0.0" width="80" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="aqL-Dl-qGn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="UzZ-NI-qlc" secondAttribute="trailing" id="7Lq-PJ-LWB"/>
+                                            <constraint firstAttribute="bottom" secondItem="AIM-0Z-IPf" secondAttribute="bottom" id="Bdz-gg-Q8Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="UzZ-NI-qlc" secondAttribute="bottom" id="GRO-rd-IyM"/>
+                                            <constraint firstAttribute="height" constant="32" id="NKU-jA-nUA"/>
+                                            <constraint firstItem="GC1-98-ETZ" firstAttribute="leading" secondItem="AIM-0Z-IPf" secondAttribute="trailing" constant="10" id="Pkw-Ns-fRx"/>
+                                            <constraint firstAttribute="bottom" secondItem="GC1-98-ETZ" secondAttribute="bottom" id="QHj-HH-2hH"/>
+                                            <constraint firstItem="AIM-0Z-IPf" firstAttribute="leading" secondItem="UG8-Tr-7aX" secondAttribute="leading" id="QyL-0f-eL7"/>
+                                            <constraint firstItem="GC1-98-ETZ" firstAttribute="top" secondItem="UG8-Tr-7aX" secondAttribute="top" id="ST8-7v-fst"/>
+                                            <constraint firstItem="UzZ-NI-qlc" firstAttribute="top" secondItem="UG8-Tr-7aX" secondAttribute="top" id="doS-7x-yFc"/>
+                                            <constraint firstItem="AIM-0Z-IPf" firstAttribute="top" secondItem="UG8-Tr-7aX" secondAttribute="top" id="hXw-cY-Mko"/>
+                                            <constraint firstItem="UzZ-NI-qlc" firstAttribute="leading" secondItem="GC1-98-ETZ" secondAttribute="trailing" constant="10" id="u42-Wq-KBA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hQ7-UP-twK" firstAttribute="trailing" secondItem="SWA-ZX-Uqi" secondAttribute="trailing" constant="20" id="KqZ-6G-fdf"/>
+                            <constraint firstItem="SWA-ZX-Uqi" firstAttribute="centerY" secondItem="hQ7-UP-twK" secondAttribute="centerY" id="Ycd-lv-9O5"/>
+                            <constraint firstItem="SWA-ZX-Uqi" firstAttribute="leading" secondItem="hQ7-UP-twK" secondAttribute="leading" constant="20" id="uZi-uV-XdH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hQ7-UP-twK"/>
                     </view>
+                    <connections>
+                        <outlet property="fromIntTextField" destination="GC1-98-ETZ" id="lQq-c1-vh5"/>
+                        <outlet property="toBoolLabel" destination="UzZ-NI-qlc" id="7eg-N2-ge1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="111"/>
         </scene>
     </scenes>
 </document>
